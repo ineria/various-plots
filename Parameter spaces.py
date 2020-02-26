@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Dec  3 15:48:08 2019
 
-@author: ms01106
 """
 
 from mpl_toolkits.mplot3d import Axes3D
