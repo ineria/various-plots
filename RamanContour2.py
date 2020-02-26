@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Fri Jan 19 13:20:59 2018
 
-@author: ms01106
 """
 
 
@@ -17,9 +15,9 @@ from pylab import meshgrid
 import matplotlib.mlab as mlab
 
 # setup files etc
-data_dir = "//surrey.ac.uk/Research/Malin_Schulz_PhDproject/Experimental/Raman/22AY04/20180424/txt files/Phygly_on_Sty-BA-AA_457_static_50%_depth_5um/"
+data_dir = "//data/"
 data_file_count = int(len(os.listdir(data_dir))) 
-filename_pattern = data_dir+"Phygly_on_Sty-BA-AA_457_static_50%_depth_5um_Acq{0}.txt"
+filename_pattern = data_dir+"name_Acq{0}.txt"
 
 #data acquisition
 
@@ -56,5 +54,5 @@ plt.text(400, 30, r'150$\mu$m into the film', fontsize=18, color='w')
 plt.text(1630, 2, r'Phytoglycogen layer', fontsize=18, color='w')
 plt.text(1740, 8.5, r'Sty-BA-AA layer', fontsize=18, color='w')
 plt.text(1750, 25.5, r'glass substrate', fontsize=18, color='w')
-plt.savefig("//surrey.ac.uk/Research/Malin_Schulz_PhDproject/Experimental/Raman/22AY04/20180424/figures/Phygly_on_Sty-BA-AA_457_static_50%_depth_5um_contourmap.svg", transparent= True )
+plt.savefig(data_dir+"image.svg", transparent= True )
 plt.show()
